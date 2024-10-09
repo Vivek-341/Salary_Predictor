@@ -1,0 +1,77 @@
+<div class="container">
+  <span class="title">Faculty Salary Predictor</span>
+</div>
+
+<br>
+
+<div>
+  <p>Salary Predictor is an application that predicts the salary of a faculty who is applying for a position.</p>
+</div>
+
+<div class="format">
+  <div>
+    <form action="" method="POST" class="predictform">
+      <select id="role" class="form-select">
+        <option selected value="0">Select Role</option>
+        <option value="Current Role">Current Role</option>
+        <option value="Future Role">Future Role</option>
+      </select>
+      <select id="college" class="form-select">
+        <option selected value="0">Select College</option>
+        <option value="VIT">VIT</option>
+        <option value="SRM">SRM</option>
+        <option value="BITS">BITS</option>
+        <option value="LPU">LPU</option>
+      </select>
+      <select id="location" class="form-select">
+        <option selected value="0">Select Location</option>
+        <option value="Urban">Urban</option>
+        <option value="Suburban">Suburban</option>
+        <option value="Rural">Rural</option>
+      </select>
+  
+      <select id="department" class="form-select">
+        <option selected value="0">Select Department</option>
+        <option value="Arts">Arts</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Business">Business</option>
+        <option value="Science">Science</option>
+        <option value="Medicine">Medicine</option>
+      </select>
+  
+      <select id="designation" class="form-select">
+        <option selected value="0">Select Designation</option>
+        <option value="1">Assistant Professor</option>
+        <option value="2">Associate Professor</option>
+        <option value="3">Professor</option>
+        <option value="4">Lecturer</option>
+        <option value="5">Research Scienti</option>
+      </select>
+  
+      <select id="degree" class="form-select">
+        <option selected value="0">Select Type of Degree</option>
+        <option value="Bachelor's">Bachelor's</option>
+        <option value="Master's">Master's</option>
+        <option value="Ph.D">Ph.D</option>
+      </select>
+  
+      <select id="certificate" class="form-select">
+        <option selected value="0">Select Type of Certified</option>
+        <option value="Non Certified">None</option>
+        <option value="Certified">Certified</option>
+        <option value="Advanced Certified">Advanced Certified</option>
+      </select>
+  
+      <input type="number" id="experience" class="form-input" placeholder="Years of Experience">
+  
+      <input type="number" id="salary" class="form-input" placeholder="No.of Publications">
+    </form>
+    <div class="predict">
+      <button id="predict" class="form-button" onclick="predict()">Predict</button>
+    </div>
+  </div>
+  <div class="result">
+    <div id="result">This is the area of prdicted salary</div>
+    <div id="accuracy">This is the area of accuracy</div>
+  </div>
+</div>
